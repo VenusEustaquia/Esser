@@ -213,9 +213,9 @@ print"
 
         <ul>
                 <li><a href=\"index.php\"><img src=\"images/logo.gif\" alt=\"logo\" id=\"imglogo\" /></a></li>
-                <li><a href=\"consejos.php\"><div id=\"boton1\" class=\"boton\">Consejos Previos</div></a></li>
-                <li><a href=\"quienes_somos.php\"><div id=\"boton2\" class=\"boton\">Quienes somos</div></a></li>
-                <li><a href=\"contacto.php\"><div id=\"boton3\" class=\"boton\">Contacto</div></a></li>    
+                <li><a href=\"consejos.php\" id=\"boton1\" class=\"boton\">Consejos Previos</a></li>
+                <li><a href=\"quienes_somos.php\" id=\"boton2\" class=\"boton\">Quienes somos</a></li>
+                <li><a href=\"contacto.php\" id=\"boton3\" class=\"boton\">Contacto</a></li>    
         </ul>
         <!-- <h1 id=\"tituloh1\">MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1> -->
         </div>
