@@ -171,7 +171,11 @@ function cabecera($texto)
 <script type=\"text/javascript\" src=\"js/jquery.easing.1.3.js\"></script>
 <script type=\"text/javascript\" src=\"js/jquery.mousewheel.js\"></script>
 <script type=\"text/javascript\" src=\"js/jScrollPane-1.2.3.min.js\"></script>
-
+<script type='text/javascript' src='js/jquery.cleanSlider.js'></script>
+<script type='text/javascript' src='js/jquery.jplayer.js'></script>    
+<script type='text/javascript' src='js/ttw-music-player-min.js'></script>
+<script type='text/javascript' src='js/ttw-music-player.js'></script>
+<script type='text/javascript' src='js/myplaylist.js'></script>
       
            
 <script type='text/javascript'>
