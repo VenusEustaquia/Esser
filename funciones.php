@@ -15,6 +15,9 @@ if ($dbMotor==MYSQL) {
    define('MYSQL_HOST', 'mysql:host=localhost'); // Nombre de host MYSQL
    define('MYSQL_USUARIO', 'root');     // Nombre de usuario de MySQL
    define('MYSQL_PASSWORD', 'root');        // Contraseï¿½a de usuario de MySQL
+//   define('MYSQL_HOST', 'mysql:host=db424092704.db.1and1.com'); // Nombre de host MYSQL
+//   define('MYSQL_USUARIO', 'dbo424092704');     // Nombre de usuario de MySQL
+//   define('MYSQL_PASSWORD', 'projectESSER&1');        // Contraseï¿½a de usuario de MySQL
    $dbDb      = 'esser';      // Nombre de la base de datos
    $dbEquipo = $dbDb.'.equipo';       // Nombre de la tabla de equipo
    $dbConsejos = $dbDb.'.consejos';       // Nombre de la tabla de 
@@ -166,23 +169,85 @@ function cabecera($texto)
  
 <script type=\"text/javascript\" src=\"js/jquery-1.6.1.min.js\"></script>
 <script type=\"text/javascript\" src=\"js/jquery.easing.1.3.js\"></script>
-<script type=\"text/javascript\" src=\"js/jquery.zaccordion.min.js\"></script>
 <script type=\"text/javascript\" src=\"js/jquery.mousewheel.js\"></script>
 <script type=\"text/javascript\" src=\"js/jScrollPane-1.2.3.min.js\"></script>
-<script src=\"js/jquery.tweet.js\" type=\"text/javascript\"></script>
-<script type=\"text/javascript\" src=\"js/swfobject.js\"></script>
+
       
            
-<script type=\"text/javascript\">
-           $().ready(function(){
-    $(\"#example1\").zAccordion({
-    timeout: 10000,
-    slideWidth: 800,
-    width: 1024,
-    height: 400
-});
+<script type='text/javascript'>
+        $(document).ready(
+        
+        function(){
+            
+             
+            $('div#lista-rock').ttwMusicPlayer(rock, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('div#lista-electro').ttwMusicPlayer(electro, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('div#lista-pop').ttwMusicPlayer(pop, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('div#lista-hiphop').ttwMusicPlayer(hiphop, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-world').ttwMusicPlayer(world, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-solista').ttwMusicPlayer(solista, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-latina').ttwMusicPlayer(latina, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-spot').ttwMusicPlayer(spot, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+             
+            var config={};
+            config.width =1024;  //slider width size in pixels 
+            config.height=400;  //slider height size in pixels 
+            config.intervalTime  =7000; //mili-seconds between slides   
+            $('.slider').cleanSlider(config);
 
-    });
+    
+            $('#example1').zAccordion({
+                timeout: 6000,
+                slideWidth: 800,
+                width: 1024,
+                height: 350
+                });
+            
+        });
+    
+           
+
+   
     function MM_validateForm() { //v4.0
   if (document.getElementById){
     var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
@@ -198,7 +263,11 @@ function cabecera($texto)
       } } } else if (test.charAt(0) == 'R') errors += '- '+nm+'.'; }
     } if (errors) alert('Han ocurrido los siguientes errores:'+errors);
     document.MM_returnValue = (errors == '');
-} }
+}
+    }
+     
+             
+   
 </script>
 
            
