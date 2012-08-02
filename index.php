@@ -7,7 +7,7 @@ print "
   <div id=\"container\">
     <ul id=\"example1\">
         <li>
-          <image src=\"images/img1.jpg\" width=\"800\" height=\"400\" alt=\"Imagen Esser 1\" />
+          <image src=\"images/img2.jpg\" width=\"800\" height=\"400\" alt=\"Imagen Esser 1\" />
         </li>
         
         <li>
