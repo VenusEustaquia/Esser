@@ -184,7 +184,7 @@ ul{
 	padding-top:20px;
 
         bottom: 0px;
-           position:absolute;
+        /*position:absolute;*/
 	padding-bottom:25px;
         
         margin:0px;
@@ -309,13 +309,6 @@ a:hover{
 	text-decoration: underline;
 	color: #FFFFFF;
 }
-/*
-#logo {
-	position: absolute;
-	left: 378px;
-	top: 100px;
-	height: 140px;
-}*/
 
 /* CONTACTO*/
 form{
