@@ -182,16 +182,13 @@ ul{
 	color:#E1DCCA;
         background-color: #6C6C6C;
 	padding-top:20px;
-
         bottom: 0px;
         /*position:absolute;*/
 	padding-bottom:25px;
-        
         margin:0px;
         margin-top: 20px;
 	visibility:visible;
 	border-top: solid 3px #6C6C6C;
-        
 }
 /*Estilo del banner:*/
 #container {
@@ -397,6 +394,9 @@ contacto{
     height:16px;
     display: block;
 }
+
+/*902932140*/
+
 .clean_slider_mark_container a.active{
     background: url(images/bg2.png) transparent bottom left no-repeat;
     width:16px;;

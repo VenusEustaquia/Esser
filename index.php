@@ -7,7 +7,7 @@ print "
   <div class='slider'>
     <ul >
         <li>
-          <image src=\"images/img1.jpg\" width=\"800\" height=\"400\" alt=\"Imagen Esser 1\" />
+            <image src=\"images/img1.jpg\" width=\"800\" height=\"400\" alt=\"Imagen Esser 1\" />
         </li>
         
         <li>
@@ -77,7 +77,7 @@ print "
         </li> 
         <li>
          
-          <a href=\"listar.php?tipo=latina\" title='música latina' id='latina' class='cajas'></a>
+          <a href=\"listar.php?tipo=latina\" title='m√∫sica latina' id='latina' class='cajas'></a>
          
         </li> 
         <li>
