@@ -158,118 +158,34 @@ function fechaAmd($dma)
 
 function cabecera($texto)
 {
-   print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"
-      \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
-<html lang='es' xmlns=\"http://www.w3.org/1999/xhtml\">
+   print "<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+      'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html lang='es' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
- <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
+ <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
  <title>Esser Estudio - $texto</title>
- <link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\" />
+ <link href='style.css' rel='stylesheet' type='text/css' />
  <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
  
-<script type=\"text/javascript\" src=\"js/jquery-1.6.1.min.js\"></script>
-<script type=\"text/javascript\" src=\"js/jquery.easing.1.3.js\"></script>
-<script type=\"text/javascript\" src=\"js/jquery.mousewheel.js\"></script>
-<script type=\"text/javascript\" src=\"js/jScrollPane-1.2.3.min.js\"></script>
+<script type='text/javascript' src='js/jquery-1.6.1.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+<script type='text/javascript' src='js/jScrollPane-1.2.3.min.js'></script>
 <script type='text/javascript' src='js/jquery.cleanSlider.js'></script>
 <script type='text/javascript' src='js/jquery.jplayer.js'></script>    
 <script type='text/javascript' src='js/ttw-music-player-min.js'></script>
 <script type='text/javascript' src='js/ttw-music-player.js'></script>
 <script type='text/javascript' src='js/myplaylist.js'></script>
-      
-           
+     
 <script type='text/javascript'>
-        $(document).ready(
-        
-        function(){
-            
-             
-            $('div#lista-rock').ttwMusicPlayer(rock, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('div#lista-electro').ttwMusicPlayer(electro, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('div#lista-pop').ttwMusicPlayer(pop, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('div#lista-hiphop').ttwMusicPlayer(hiphop, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('#lista-world').ttwMusicPlayer(world, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('#lista-solista').ttwMusicPlayer(solista, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('#lista-latina').ttwMusicPlayer(latina, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-            $('#lista-spot').ttwMusicPlayer(spot, {
-                autoPlay:false, 
-                jPlayer:{
-                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-             
-            var config={};
-            config.width =1024;  //slider width size in pixels 
-            config.height=400;  //slider height size in pixels 
-            config.intervalTime  =7000; //mili-seconds between slides   
-            $('.slider').cleanSlider(config);
-
-    
-            $('#example1').zAccordion({
-                timeout: 6000,
-                slideWidth: 800,
-                width: 1024,
-                height: 350
-                });
-            
-        });
-    
-           
-
-   
-    function MM_validateForm() { //v4.0
-  if (document.getElementById){
-    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
-      if (val) { nm=val.name; if ((val=val.value)!='') {
-        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-          if (p<1 || p==(val.length-1)) errors+='- '+nm+' Te falta el email';
-        } else if (test!='R') { num = parseFloat(val);
-          if (isNaN(val)) errors+='- '+nm+' Te has olvidad del telefono.';
-          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-            min=test.substring(8,p); max=test.substring(p+1);
-            if (num<min || max<num) errors+='- '+nm+' Debería haber un numero entre '+min+' y '+max+'.';
-      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+'.'; }
-    } if (errors) alert('Han ocurrido los siguientes errores:'+errors);
-    document.MM_returnValue = (errors == '');
-}
-    }
+$(document).ready(function(){
+    var config={};
+    config.width =550;  //slider width size in pixels 
+    config.height=350;  //slider height size in pixels 
+    config.intervalTime  =7000; //mili-seconds between slides   
+    $('.slider').cleanSlider(config);
+})
      
              
    
@@ -281,24 +197,24 @@ function cabecera($texto)
 
 
 print"
-<div id=\"contenedor\">
-        <div id=\"menucabecera\">
+<div id='contenedor'>
+        <div id='menucabecera'>
 
         <ul>
-                <li><a href=\"index.php\"><img src=\"images/logo.gif\" alt=\"logo\" id=\"imglogo\" /></a></li>
-                <li><a href=\"consejos.php\" id=\"boton1\" class=\"boton\">Consejos Previos</a></li>
-                <li><a href=\"quienes_somos.php\" id=\"boton2\" class=\"boton\">Quienes somos</a></li>
-                <li><a href=\"contacto.php\" id=\"boton3\" class=\"boton\">Contacto</a></li>    
+                <li><a href='index.php'><img src='images/logo.gif' alt='logo' id='imglogo' /></a></li>
+                <li><a href='consejos.php' id='boton1' class='boton'>Consejos Previos</a></li>
+                <li><a href='quienes_somos.php' id='boton2' class='boton'>Quienes somos</a></li>
+                <li><a href='contacto.php' id='boton3' class='boton'>Contacto</a></li>    
         </ul>
         
         </div>
-        <!--<h1 id=\"tituloh1\">MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1>-->
+        <!--<h1 id='tituloh1'>MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1>-->
 <!-- twitter -->
-       <div id=\"enlaces\" >
+       <div id='enlaces' >
        <ul>
-            <li><a href=\"index.php\"><img src=\"images/twitter-logo.png\"></img></a></li>
-            <li><a href=\"index.php\"><img src=\"images/facebook-logo.png\"></img></a></li>
-            <li><a href=\"index.php\"><img src=\"images/youtube-logo.png\"></img></a></li>            
+            <li><a href='index.php'><img src='images/twitter-logo.png'></img></a></li>
+            <li><a href='index.php'><img src='images/facebook-logo.png'></img></a></li>
+            <li><a href='index.php'><img src='images/youtube-logo.png'></img></a></li>            
             </ul>
                         
         
