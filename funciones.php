@@ -177,15 +177,91 @@ function cabecera($texto)
 <script type='text/javascript' src='js/ttw-music-player-min.js'></script>
 <script type='text/javascript' src='js/ttw-music-player.js'></script>
 <script type='text/javascript' src='js/myplaylist.js'></script>
-     
+      
+           
 <script type='text/javascript'>
-$(document).ready(function(){
-    var config={};
-    config.width =550;  //slider width size in pixels 
-    config.height=350;  //slider height size in pixels 
-    config.intervalTime  =7000; //mili-seconds between slides   
-    $('.slider').cleanSlider(config);
-})
+        $(document).ready(
+        
+        function(){
+            var config={};
+            config.width =1024;  //slider width size in pixels 
+            config.height=400;  //slider height size in pixels 
+            config.intervalTime  =7000; //mili-seconds between slides   
+            $('.slider').cleanSlider(config);
+             
+            $('div#lista-rock').ttwMusicPlayer(rock, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('div#lista-electro').ttwMusicPlayer(electro, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('div#lista-pop').ttwMusicPlayer(pop, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('div#lista-hiphop').ttwMusicPlayer(hiphop, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-world').ttwMusicPlayer(world, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-solista').ttwMusicPlayer(solista, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-latina').ttwMusicPlayer(latina, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+            $('#lista-spot').ttwMusicPlayer(spot, {
+                autoPlay:false, 
+                jPlayer:{
+                    swfPath:'js' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+             
+            
+            
+        });
+    
+           
+
+   
+    function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!='') {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' Te falta el email';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' Te has olvidad del telefono.';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' Debería haber un numero entre '+min+' y '+max+'.';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+'.'; }
+    } if (errors) alert('Han ocurrido los siguientes errores:'+errors);
+    document.MM_returnValue = (errors == '');
+}
+    }
      
              
    
