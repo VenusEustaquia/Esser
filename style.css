@@ -1,7 +1,12 @@
 body{
 	background-color: #E1DCCA;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
+        color:#6C6C6C;
+        position: relative;
+        border: 1px solid black;
+        padding-bottom: 80px
+      
 }    
     
 #contenedor{
@@ -10,12 +15,22 @@ body{
         /*border: solid 3px #eee;*/
         /*background-color: grey;*/
         text-align: center;
-	margin-bottom:10px;
+	margin: 0 auto 10px auto;
 }
 #menucabecera{
 	width:1024px;
 	height:100px;
         margin-bottom: 0px;
+}
+
+h1{
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    color:#6C6C6C;
+    text-align: left;
+}
+h2{
+    text-decoration: underline;
 }
 
 #imglogo{
@@ -35,12 +50,14 @@ body{
         font-size: 17px;
        /* border: #6C6C6C solid 1px;*/
       /*  background-image: url("images/fondoboton1.jpg"); */
-	color:#6C6C6C;
+	
 	text-align:right;
         margin-top: 35px;
         padding-top: 15px;
         font-size:20px
-	
+}
+.boton:visited{
+        color:#6C6C6C;
 }
 .boton:hover{
     	/*background-image: url("images/fondoboton2.jpg"); */
@@ -72,9 +89,7 @@ ul{
         width: 150px;
 	height: 150px;
 }
-.boton:hover{
-	/*border:green 2px groove;*/
-}
+
 #tituloh1 {
 	position: absolute;
 	height: auto;
@@ -85,12 +100,28 @@ ul{
 }
 /*Estilo de los botones inferiores del index*/
 #container2{
-	width:1035px;
+	width:1024px;
+        margin:0 auto;
 	height:auto;
 }
 
 #container2 ul{
-    margin-left: -45px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: table;
+    width: 100%
+}
+
+#container2 ul li{
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+}
+
+#container2 ul li a{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .cajas{
@@ -100,11 +131,10 @@ ul{
 	background-image: url("images/fondoboton1.jpg");
 /*	position: relative;*/
 	float: left;
-        margin: 5px;
-        margin-left: 20px;
-        margin-bottom: 15px;
+        margin: 0px;
         border: #6C6C6C solid 1px;
 	color:#6C6C6C;
+        display: inline-block;
         /*padding: 40px 0px;
         margin-left: 0;
         margin-right: 30px;
@@ -153,9 +183,11 @@ ul{
         background-color: #6C6C6C;
 	padding-top:20px;
 
+        bottom: 0px;
+           position:absolute;
 	padding-bottom:25px;
         
-        margin:-30px;
+        margin:0px;
         margin-top: 20px;
 	visibility:visible;
 	border-top: solid 3px #6C6C6C;
@@ -237,8 +269,10 @@ h2{
 .cambiable{
     height: 300px;
     width: 300px;
+    margin: 20px;
     position: relative;
     float: left;
+    background-color: #D4CCB1;
 }
 .cambiable .initial, .cambiable .final{
     position: absolute;

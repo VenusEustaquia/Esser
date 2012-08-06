@@ -6,6 +6,7 @@ cabecera('Contacto');
 
 print "
   <div id=\"contacto\">
+  <h2>Contacto</h2>
         
         <div id=\"formulario\">
          <form id=\"form1\" method=\"post\" action=\"\">

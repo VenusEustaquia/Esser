@@ -166,6 +166,7 @@ function cabecera($texto)
  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
  <title>Esser Estudio - $texto</title>
  <link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\" />
+ <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
  
 <script type=\"text/javascript\" src=\"js/jquery-1.6.1.min.js\"></script>
 <script type=\"text/javascript\" src=\"js/jquery.easing.1.3.js\"></script>
@@ -280,7 +281,6 @@ function cabecera($texto)
 
 
 print"
-<center>
 <div id=\"contenedor\">
         <div id=\"menucabecera\">
 
@@ -290,9 +290,9 @@ print"
                 <li><a href=\"quienes_somos.php\" id=\"boton2\" class=\"boton\">Quienes somos</a></li>
                 <li><a href=\"contacto.php\" id=\"boton3\" class=\"boton\">Contacto</a></li>    
         </ul>
-        <!-- <h1 id=\"tituloh1\">MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1> -->
+        
         </div>
-
+        <h1 id=\"tituloh1\">MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1>
 <!-- twitter -->
        <div id=\"enlaces\" >
        <ul>
@@ -325,7 +325,6 @@ function pie()
 
 
 </div>
-</center>
 </body>
 </html>';
 }
