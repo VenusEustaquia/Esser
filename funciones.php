@@ -292,7 +292,7 @@ print"
         </ul>
         
         </div>
-        <h1 id=\"tituloh1\">MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1>
+        <!--<h1 id=\"tituloh1\">MÚSICOS QUE TRABAJAN PARA MÚSICOS</h1>-->
 <!-- twitter -->
        <div id=\"enlaces\" >
        <ul>
